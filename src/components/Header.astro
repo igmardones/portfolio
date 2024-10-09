@@ -1,0 +1,101 @@
+<header class="py-4 sm:py-10 text-white">
+  <nav
+    class="max-w-7xl mx-auto px-5 flex flex-wrap items-center justify-between"
+  >
+    <!-- Logo -->
+    <a href="/">
+      <img
+        class="w-20 sm:w-18 sm:h-18 rounded-full"
+        src="/src/assets/images/logo.jpg"
+        alt="Ignacio Mardones"
+      />
+    </a>
+
+    <!-- Menú de Navegación -->
+    <div class="hidden md:flex space-x-6">
+      <a
+        class="py-1 font-secondary text-md font-semibold hover:text-violet-300 uppercase transition-colors duration-300"
+        href="/">Inicio</a
+      >
+      <a
+        class="py-1 font-secondary text-md font-semibold hover:text-violet-300 uppercase transition-colors duration-300"
+        href="/sobre-mi">Sobre mí</a
+      >
+      <a
+        class="py-1 font-secondary text-md font-semibold hover:text-violet-300 uppercase transition-colors duration-300"
+        href="/experiencia">Experiencia</a
+      >
+      <a
+        class="py-1 font-secondary text-md font-semibold hover:text-violet-300 uppercase transition-colors duration-300"
+        href="/habilidades">Habilidades</a
+      >
+      <a
+        class="py-1 font-secondary text-md font-semibold hover:text-violet-300 uppercase transition-colors duration-300"
+        href="/proyectos">Proyectos</a
+      >
+      <a
+        class="py-1 font-secondary text-md font-semibold hover:text-violet-300 uppercase transition-colors duration-300"
+        href="/contacto">Contacto</a
+      >
+    </div>
+
+    <!-- Menú Responsivo (Opcional) -->
+    <div class="md:hidden">
+      <button id="menu-button" class="text-white focus:outline-none">
+        <!-- Icono de menú (hamburguesa) -->
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menú desplegable para dispositivos móviles (Opcional) -->
+  <div id="mobile-menu" class="hidden md:hidden text-center">
+    <a
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-pink-400 uppercase transition-colors duration-300"
+      href="/">Inicio</a
+    >
+    <a
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-pink-400 uppercase transition-colors duration-300"
+      href="/sobre-mi">Sobre mí</a
+    >
+    <a
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-pink-400 uppercase transition-colors duration-300"
+      href="/experiencia">Experiencia</a
+    >
+    <a
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-pink-400 uppercase transition-colors duration-300"
+      href="/habilidades">Habilidades</a
+    >
+    <a
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-pink-400 uppercase transition-colors duration-300"
+      href="/proyectos">Proyectos</a
+    >
+    <a
+      class="block px-4 py-2 text-sm font-secondary font-semibold hover:text-pink-400 uppercase transition-colors duration-300"
+      href="/contacto">Contacto</a
+    >
+  </div>
+</header>
+
+<!-- Script para manejar el menú móvil (Opcional) -->
+<script>
+  const menuButton = document.getElementById("menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
+</script>
