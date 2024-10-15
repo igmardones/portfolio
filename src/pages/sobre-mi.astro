@@ -3,38 +3,39 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Sobre mí">
-  <main>
+  <main class="max-w-7xl mx-auto p-4">
     <div class="grid grid-cols-1 max-w-[1280px] mx-auto">
-      <h1 class="font-bold text-5xl text-white">Sobre mí</h1>
+      <h1 class="font-bold text-5xl text-white mb-8">Sobre mí</h1>
     </div>
-    <section class="grid grid-cols-1 max-w-[1280px] mx-auto gap-4 mt-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center text-white">
+    <section class="grid grid-cols-1 max-w-[1280px] mx-auto gap-4 mt-10">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 items-center text-white gap-4"
+      >
         <img
           src="/src/assets/images/mi-foto.jpg"
           alt="Mi foto"
-          class="size-[540px] rounded-full shadow-lg"
+          class="w-full md:w-10/12 rounded-full shadow-lg"
         />
         <div>
-          <div>
-            <h1 class="font-bold text-5xl text-white mb-10">
-              Ignacio Mardones Rivera
-            </h1>
-          </div>
-          <p class="text-white text-lg mb-10">
+          <h1 class="font-bold text-3xl md:text-5xl text-white mb-10 md:mb-10">
+            Ignacio Mardones Rivera
+          </h1>
+          <p class="text-white text-base md:text-lg mb-10 md:mb-10">
             Bienvenidos a mi Portafolio, en donde podrás encontrar información
             sobre mi perfil profesional, proyectos realizados y las habilidades
             que manejo o me encuentro perfeccionando.
           </p>
-
-          <li>
-            🧑‍💻 Desarrollador Web Full Stack y apasionado por la tecnología
-          </li>
-          <li>🎓 Titulado de Ingeniería en Informática en INACAP, Chile.</li>
-          <li>
-            📚 Me gusta estar en constante aprendizaje de nuevas habilidades o
-            herramientas.
-          </li>
-          <li>💪 Siempre abierto a enfrentar nuevos desafios.</li>
+          <ul class="list-disc space-y-2 ml-5">
+            <li>
+              🧑‍💻 Desarrollador Web Full Stack y apasionado por la tecnología
+            </li>
+            <li>🎓 Titulado de Ingeniería en Informática en INACAP, Chile.</li>
+            <li>
+              📚 Me gusta estar en constante aprendizaje de nuevas habilidades o
+              herramientas.
+            </li>
+            <li>💪 Siempre abierto a enfrentar nuevos desafios.</li>
+          </ul>
         </div>
       </div>
     </section>
