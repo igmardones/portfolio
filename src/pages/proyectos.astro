@@ -1,9 +1,65 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ui/ProjectCard.astro";
 ---
 
 <Layout title="igmardones">
   <main>
-    <h1 class="text-white font-bold text-6xl text-center mt-10">Proyectos</h1>
-  </main></Layout
->
+    <div class="grid grid-cols-1 max-w-[1280px] mx-auto">
+      <h1 class="font-bold text-5xl text-white">Proyectos</h1>
+    </div>
+
+    <section
+      class="grid grid-cols-1 md:grid-cols-3 max-w-[1280px] mx-auto gap-8 mt-20"
+    >
+      <ProjectCard
+        imageUrl="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="Asech TI - Proyecto de Título"
+        description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonText="Leer más"
+        technologies={["MongoDB", "Express.js", "React.js", "Node.js"]}
+      />
+
+      <ProjectCard
+        imageUrl="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="Asistencia Remota - HFRZ"
+        description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonText="Ver detalles"
+        technologies={["React.js", "Node.js", "MySQL", "Ant Design", "JWT"]}
+      />
+
+      <ProjectCard
+        imageUrl="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="Casmaq - Landing Page"
+        description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonText="Ver detalles"
+        technologies={["Astro", "TailwindCSS", "TypeScript"]}
+      />
+
+      <ProjectCard
+        imageUrl="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="Portfolio personal"
+        description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonText="Ver detalles"
+        technologies={["Astro", "TailwindCSS", "TypeScript"]}
+      />
+
+      <ProjectCard
+        imageUrl="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="Desarrollo de APIS en .NET"
+        description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonText="Ver detalles"
+        technologies={["C#", ".NET"]}
+      />
+
+      <ProjectCard
+        imageUrl="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="En proceso"
+        description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonText="Ver detalles"
+        technologies={["Astro", "Node.js", "MongoDB"]}
+      />
+      <!-- Puedes seguir añadiendo más tarjetas aquí -->
+    </section>
+  </main>
+</Layout>
