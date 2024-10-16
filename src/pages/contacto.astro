@@ -1,11 +1,34 @@
 ---
+import Illustration from "../components/icons/redes/Illustration.astro";
+import SocialLinks from "../components/ui/SocialLinks.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contacto">
-  <main class="max-w-7xl mx-auto p-4">
-    <div class="grid grid-cols-1 max-w-[1280px] mx-auto">
+  <main class="flex-grow max-w-7xl mx-auto p-4">
+    <div class="grid grid-cols-1 text-center">
       <h1 class="font-bold text-5xl text-white">Contacto</h1>
     </div>
-  </main></Layout
->
+
+    <!-- Texto de presentación -->
+    <div class="grid place-items-center mt-10 mb-10 text-center">
+      <p class="text-lg text-white">
+        Siempre estoy buscando nuevos desafíos y oportunidades emocionantes. No
+        dudes en ponerte en contacto conmigo a través de mis redes sociales.
+      </p>
+    </div>
+
+    <!-- Imagen de bombilla o ilustración -->
+    <div class="grid place-items-center">
+      <div
+        class="bg-sky-800 border-sky-900 border-8 w-11/12 sm:w-6/12 md:size-96 rounded-full shadow-lg pt-9"
+      >
+        <SocialLinks />
+        <Illustration />
+      </div>
+    </div>
+
+    <!-- Iconos de redes sociales -->
+    <div class="grid place-items-center"></div>
+  </main>
+</Layout>
